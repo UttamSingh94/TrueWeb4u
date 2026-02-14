@@ -356,95 +356,131 @@ footer{
     header{
         padding:10px 3%;
         flex-direction:column;
+        gap:10px;
     }
     
     header h1{
-        font-size:18px;
-        margin-bottom:10px;
+        font-size:16px;
     }
     
     nav{
         display:flex;
         flex-direction:column;
-        gap:8px;
+        gap:5px;
+        width:100%;
     }
     
     nav a{
         margin-left:0;
-        font-size:12px;
+        font-size:11px;
+        padding:5px 0;
     }
     
     /* Hero */
     .hero{
         height:auto;
-        min-height:100vh;
-        padding:100px 5% 0;
+        min-height:auto;
+        flex-direction:column;
+        padding:100px 5% 50px;
+        gap:20px;
+    }
+    
+    .hero-text{
+        width:100%;
+        max-width:none;
+        text-align:center;
     }
     
     .hero h2{
-        font-size:24px;
+        font-size:20px;
         margin-bottom:10px;
     }
     
     .hero-text p{
-        font-size:14px;
+        font-size:13px;
+        line-height:1.4;
+    }
+    
+    .btn{
+        padding:10px 20px;
+        font-size:12px;
     }
     
     #robot3d{
-        width:200px;
-        height:200px;
-        margin-top:30px;
+        width:150px;
+        height:150px;
+        margin:10px auto;
     }
     
     /* Section */
     section{
-        padding:60px 5%;
+        padding:50px 5%;
         min-height:auto;
     }
     
     section h2{
-        font-size:22px;
+        font-size:20px;
+        margin-bottom:20px;
     }
     
     .card{
         width:100%;
         max-width:none;
-        padding:20px;
+        padding:15px;
         margin:10px 0;
-    }
-    
-    .btn{
-        padding:10px 25px;
-        font-size:14px;
+        font-size:13px;
     }
     
     /* Contact Form */
     .contact-form{
         max-width:100%;
-        margin:30px auto;
+        margin:20px 0;
+        gap:10px;
     }
     
     .contact-form input,
     .contact-form textarea{
-        font-size:16px;
+        padding:10px;
+        font-size:14px;
+    }
+    
+    /* Loader */
+    .spinner{
+        width:30px;
+        height:30px;
+        border:3px solid rgba(56,189,248,0.2);
+        border-top:3px solid #38bdf8;
+    }
+    
+    .loader p{
+        font-size:12px;
+    }
+    
+    .success-message{
+        padding:15px;
+        margin-top:15px;
+        font-size:12px;
     }
     
     /* Chatbot */
     .chatbot{
         bottom:10px;
         right:10px;
-        padding:10px;
-        font-size:12px;
+        padding:8px;
+    }
+    
+    .chatbot p{
+        font-size:11px;
     }
     
     .chatbot button{
-        padding:6px 12px;
-        font-size:12px;
+        padding:5px 10px;
+        font-size:11px;
     }
     
     /* Footer */
     footer{
-        padding:40px 5% 20px;
+        padding:30px 5% 15px;
     }
     
     .footer-content{
@@ -454,25 +490,30 @@ footer{
     
     .footer-section h3,
     .footer-section h4{
-        font-size:14px;
+        font-size:13px;
     }
     
-    .footer-section p{
-        font-size:12px;
+    .footer-section p,
+    .contact-info p{
+        font-size:11px;
     }
     
     .social-links{
         flex-direction:column;
-        gap:8px;
+        gap:6px;
+    }
+    
+    .social-links a{
+        font-size:11px;
     }
     
     .footer-links a,
     .footer-links span{
-        font-size:11px;
+        font-size:10px;
     }
     
     .footer-bottom p{
-        font-size:11px;
+        font-size:10px;
     }
 }
 </style>
