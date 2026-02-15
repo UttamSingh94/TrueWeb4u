@@ -411,15 +411,22 @@ footer{
     }
     
     #robot3d{
-        width:100px;
-        height:100px;
-        position:absolute;
-        margin:0 auto;
-        left:50%;
-        transform:translateX(-50%);
-        bottom:-150px;
-    }
-    
+    width:180px;
+    height:180px;
+    margin:40px auto;
+}
+
+/* Hide inside hero */
+.hero #robot3d{
+    display:none;
+}
+
+/* Show between sections */
+.mobile-ai{
+    display:block;
+    text-align:center;
+}
+
     /* Section */
     section{
         padding:40px 5%;
@@ -551,7 +558,7 @@ footer{
     </div>
     <div id="robot3d"></div>
 </div>
-
+<div class="mobile-ai" id="mobileAI"></div>
 <section data-aos="fade-up" id="services">
     <h2>Our Services</h2>
     <div class="card">Web & App Design</div>
@@ -633,7 +640,20 @@ const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75,1,0.1,1000);
 const renderer = new THREE.WebGLRenderer({alpha:true});
 renderer.setSize(500,500);
-document.getElementById('robot3d').appendChild(renderer.domElement);
+function appendRenderer() {
+    if (window.innerWidth <= 480) {
+        document.getElementById('mobileAI').appendChild(renderer.domElement);
+        renderer.setSize(450, 450);
+    } else {
+        document.getElementById('robot3d').appendChild(renderer.domElement);
+        renderer.setSize(500, 500);
+    }
+}
+
+appendRenderer();
+
+window.addEventListener('resize', appendRenderer);
+
 
 const geometry = new THREE.SphereGeometry(2,32,32);
 const material = new THREE.MeshBasicMaterial({color:0x38bdf8, wireframe:true});
