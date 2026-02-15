@@ -354,26 +354,29 @@ footer{
 @media(max-width:480px){
     /* Header */
     header{
-        padding:10px 3%;
+        padding:8px 3%;
         flex-direction:column;
-        gap:10px;
+        gap:8px;
+        align-items:flex-start;
     }
     
     header h1{
-        font-size:16px;
+        font-size:14px;
+        margin:0;
     }
     
     nav{
         display:flex;
-        flex-direction:column;
-        gap:5px;
+        flex-direction:row;
+        gap:10px;
         width:100%;
+        flex-wrap:wrap;
     }
     
     nav a{
         margin-left:0;
-        font-size:11px;
-        padding:5px 0;
+        font-size:10px;
+        padding:4px 0;
     }
     
     /* Hero */
@@ -381,8 +384,8 @@ footer{
         height:auto;
         min-height:auto;
         flex-direction:column;
-        padding:100px 5% 50px;
-        gap:20px;
+        padding:70px 5% 30px;
+        gap:15px;
     }
     
     .hero-text{
@@ -392,49 +395,58 @@ footer{
     }
     
     .hero h2{
-        font-size:20px;
-        margin-bottom:10px;
+        font-size:18px;
+        margin-bottom:8px;
     }
     
     .hero-text p{
-        font-size:13px;
+        font-size:12px;
         line-height:1.4;
     }
     
     .btn{
-        padding:10px 20px;
-        font-size:12px;
+        padding:9px 18px;
+        font-size:11px;
+        margin-top:8px;
     }
     
     #robot3d{
-        width:150px;
-        height:150px;
-        margin:10px auto;
+        width:100px;
+        height:100px;
+        position:absolute;
+        margin:0 auto;
+        left:50%;
+        transform:translateX(-50%);
+        bottom:-150px;
     }
     
     /* Section */
     section{
-        padding:50px 5%;
+        padding:40px 5%;
         min-height:auto;
     }
     
+    #services{
+        padding-top:200px;
+    }
+    
     section h2{
-        font-size:20px;
-        margin-bottom:20px;
+        font-size:18px;
+        margin-bottom:15px;
     }
     
     .card{
         width:100%;
         max-width:none;
-        padding:15px;
-        margin:10px 0;
-        font-size:13px;
+        padding:12px;
+        margin:8px 0;
+        font-size:12px;
     }
     
     /* Contact Form */
     .contact-form{
         max-width:100%;
-        margin:20px 0;
+        margin:15px 0;
         gap:10px;
     }
     
@@ -446,20 +458,20 @@ footer{
     
     /* Loader */
     .spinner{
-        width:30px;
-        height:30px;
+        width:25px;
+        height:25px;
         border:3px solid rgba(56,189,248,0.2);
         border-top:3px solid #38bdf8;
     }
     
     .loader p{
-        font-size:12px;
+        font-size:11px;
     }
     
     .success-message{
-        padding:15px;
-        margin-top:15px;
-        font-size:12px;
+        padding:12px;
+        margin-top:12px;
+        font-size:11px;
     }
     
     /* Chatbot */
@@ -470,50 +482,50 @@ footer{
     }
     
     .chatbot p{
-        font-size:11px;
+        font-size:10px;
     }
     
     .chatbot button{
         padding:5px 10px;
-        font-size:11px;
+        font-size:10px;
     }
     
     /* Footer */
     footer{
-        padding:30px 5% 15px;
+        padding:25px 5% 15px;
     }
     
     .footer-content{
         grid-template-columns:1fr;
-        gap:15px;
+        gap:12px;
     }
     
     .footer-section h3,
     .footer-section h4{
-        font-size:13px;
+        font-size:12px;
     }
     
     .footer-section p,
     .contact-info p{
-        font-size:11px;
+        font-size:10px;
     }
     
     .social-links{
         flex-direction:column;
-        gap:6px;
+        gap:5px;
     }
     
     .social-links a{
-        font-size:11px;
+        font-size:10px;
     }
     
     .footer-links a,
     .footer-links span{
-        font-size:10px;
+        font-size:9px;
     }
     
     .footer-bottom p{
-        font-size:10px;
+        font-size:9px;
     }
 }
 </style>
